@@ -1,0 +1,50 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col align-self-center">
+            <h4>Covid-19 Impact</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col">
+            <div style="display: block;">
+                <canvas baseChart 
+                  [datasets]="barChartData"
+                  [labels]="barChartLabels"
+                  [options]="barChartOptions"
+                  [plugins]="barChartPlugins"
+                  [legend]="barChartLegend"
+                  [chartType]="barChartType">
+                </canvas>
+              </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div style="display: block;">
+                <canvas baseChart 
+                  [data]="pieChartData" 
+                  [labels]="pieChartLabels" 
+                  [chartType]="pieChartType"
+                  [options]="pieChartOptions"
+                  [plugins]="pieChartPlugins"
+                  [legend]="pieChartLegend">
+                </canvas>
+              </div>
+        </div>
+        <div class="col">
+            <div style="display: block;">
+                <canvas baseChart 
+                  [data]="pieChartData" 
+                  [labels]="pieChartLabels" 
+                  [chartType]="pieChartType"
+                  [options]="pieChartOptions"
+                  [plugins]="pieChartPlugins"
+                  [legend]="pieChartLegend">
+                </canvas>
+              </div>
+        </div>
+    </div>
+</div>

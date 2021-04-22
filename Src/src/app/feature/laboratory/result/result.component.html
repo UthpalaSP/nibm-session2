@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col align-self-center">
+            <h4>Test Results</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <td>
+                            Patient Name
+                        </td>
+                        <td>
+                            Patient Id
+                        </td>
+                        <td>
+                            Test Type
+                        </td>
+                        <td>
+                            Result
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let result of results">
+                        <td>{{result.name}}</td>
+                        <td>{{result.id}}</td>
+                        <td>{{result.type}}</td>
+                        <td>{{result.result}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
